@@ -1,0 +1,74 @@
+#         One Thousand Dwarf Novae from the OGLE Survey
+#
+#        P. Mroz, A. Udalski, R. Poleski, P. Pietrukowicz
+#          M.K. Szymanski, I. Soszynski, L. Wyrzykowski, 
+#            K. Ulaczyk, S. Kozlowski, and J. Skowron
+# 
+# X-ray Counterparts to Dwarf Novae
+#
+#
+#
+# Format of the file cv_xrays.dat:
+# ----------------------------------------------------------------------
+# Bytes  Format Units   Description
+# ----------------------------------------------------------------------
+#  1-16  A16   ---     Star's ID
+# 18-40  A23   ---     X-ray source name
+# 42-45  F4.2  arcsec  Angular distance between the star and X-ray source
+# 47-50  A4    ---     Identifier in the Chandra Galactic Bulge Survey 
+#                      Full X-Ray Point Source Catalog (Jonker et al.
+#                      2011, 2014)
+#    52  I1    ---     Reference
+# ----------------------------------------------------------------------
+# References:
+# -----------
+# [1] Chandra Galactic Bulge Survey Full X-Ray Point Source Catalog
+#     http://heasarc.gsfc.nasa.gov/W3Browse/chandra/changbscat.html
+#     Jonker P. G. et al. 2014, ApJS, 210, 18
+#     Jonker P. G. et al. 2011, ApJS, 194, 18
+# [2] XMM-Newton Serendipitous Source Catalog (3XMM DR5 Version)
+#     http://heasarc.gsfc.nasa.gov/W3Browse/xmm-newton/xmmssc.html
+#     Rosen S. R. et al. 2015, arXiv:1504.07051
+# [3] XMM-Newton Slew Survey Clean Source Catalog, v1.6
+#     http://heasarc.gsfc.nasa.gov/w3browse/all/xmmslewcln.html
+#     Saxton R. D. et al. 2008, A&A, 480, 611
+
+OGLE-BLG-DN-0001 CXOGBS J175310.0-292120 0.48 B245 1
+OGLE-BLG-DN-0037 CXOGBS J173317.4-301551 0.12 860  1
+OGLE-BLG-DN-0065 CXOGBS J173935.7-272935 0.24 18   1
+OGLE-BLG-DN-0161 CXOGBS J174959.3-295711 0.66 714  1
+OGLE-BLG-DN-0162 3XMM   J175000.6-370714 2.22      2
+OGLE-BLG-DN-0170 3XMM   J175028.5-310719 0.30      2
+OGLE-BLG-DN-0185 3XMM   J175111.1-310936 1.08      2
+OGLE-BLG-DN-0193 3XMM   J175135.3-310527 4.02      2
+OGLE-BLG-DN-0200 3XMM   J175154.5-221223 0.96      2
+OGLE-BLG-DN-0211 CXOGBS J175209.2-290721 0.24 534  1
+OGLE-BLG-DN-0219 CXOGBS J175236.0-291939 0.12 426  1
+OGLE-BLG-DN-0247 3XMM   J175347.6-294438 1.08      2
+OGLE-BLG-DN-0247 CXOGBS J175347.8-294438 0.66 B26  1
+OGLE-BLG-DN-0265 3XMM   J175450.2-290032 2.52      2
+OGLE-BLG-DN-0265 CXOGBS J175450.1-290035 1.38 B341 1
+OGLE-BLG-DN-0331 CXOGBS J175710.0-275753 0.66 B137 1
+OGLE-BLG-DN-0341 3XMM   J175727.4-300545 0.24      2
+OGLE-BLG-DN-0376 CXOGBS J175832.4-275244 0.30 B10  1
+OGLE-BLG-DN-0558 3XMM   J180318.3-330610 1.92      2
+OGLE-BLG-DN-0599 3XMM   J180401.6-295751 1.08      2
+OGLE-BLG-DN-0602 3XMM   J180406.3-300415 1.38      2
+OGLE-BLG-DN-0610 3XMM   J180417.3-283721 1.14      2
+OGLE-BLG-DN-0635 3XMM   J180439.4-275005 2.64      2
+OGLE-BLG-DN-0645 3XMM   J180451.3-274511 0.54      2
+OGLE-BLG-DN-0651 3XMM   J180457.9-283351 1.80      2
+OGLE-BLG-DN-0656 3XMM   J180507.0-274308 0.72      2
+OGLE-BLG-DN-0673 3XMM   J180540.5-273428 1.86      2
+OGLE-BLG-DN-0690 3XMM   J180608.2-274524 1.68      2
+OGLE-BLG-DN-0743 3XMM   J180738.9-292355 2.04      2 
+OGLE-BLG-DN-0752 3XMM   J180755.5-270938 3.30      2
+OGLE-BLG-DN-0754 3XMM   J180757.6-291813 3.24      2
+OGLE-BLG-DN-1042 3XMM   J182106.9-273639 1.98      2
+OGLE-BLG-DN-1050 3XMM   J182301.8-303114 3.54      2
+OGLE-BLG-DN-1056 3XMM   J183602.7-235525 1.02      2
+OGLE-BLG-DN-1057 3XMM   J183624.8-235436 1.86      2
+OGLE-MC-DN-0009  3XMM   J020950.7-631840 0.90      2
+OGLE-MC-DN-0009  XMMSL1 J020951.0-631838 0.36      3
+OGLE-MC-DN-0015  XMMSL1 J044141.2-763640 6.18      3
+OGLE-MC-DN-0031  XMMSL1 J081224.7-711441 4.86      3

@@ -1,0 +1,97 @@
+=======================================================================
+               The OGLE Collection of Variable Stars
+  Eclipsing and Ellipsoidal Binary Systems Toward the Galactic Bulge
+
+ I. Soszynski, M. Pawlak, P. Pietrukowicz, A. Udalski, M. K. Szymanski,
+ L. Wyrzykowski, K. Ulaczyk, R. Poleski, S. Kozlowski, D.M. Skowron,
+               J. Skowron, P. Mroz, and A. Hamanowicz
+
+=======================================================================
+soszynsk@astrouw.edu.pl
+
+This directory contains the OGLE catalog of eclipsing and ellipsoidal
+binary systems toward the Galactic bulge.
+
+The directory structure is as follows:
+
+README            - this file
+
+ident.dat         - identification of stars
+
+ecl.dat           - parameters of eclipsing binary systems
+ell.dat           - parameters of ellipsoidal binary systems
+
+phot_ogle2/I/     - I-band OGLE-II photometry of individual stars (1997-2000)
+phot_ogle2/V/     - V-band OGLE-II photometry of individual stars (1997-2000)
+phot_ogle2.tar.gz - gzipped phot_ogle2/ directory
+
+phot_ogle3/I/     - I-band OGLE-III photometry of individual stars (2001-2009)
+phot_ogle3/V/     - V-band OGLE-III photometry of individual stars (2001-2009)
+phot_ogle3.tar.gz - gzipped phot_ogle3/ directory
+
+phot_ogle4/I/     - I-band OGLE-IV photometry of individual stars (2010-2015)
+phot_ogle4/V/     - V-band OGLE-IV photometry of individual stars (2010-2015)
+phot_ogle4.tar.gz - gzipped phot_ogle4/ directory
+
+fcharts/          - finding charts of individual stars
+
+remarks.txt       - remarks on selected stars
+
+paper.pdf         - PDF version of the paper Soszynski et al. (2016),
+                    Acta Astron. 66, 405, (arXiv:1701.03105) describing
+                    the collection.
+
+
+Format of the file ident.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 19  A19   ---     Star's ID
+ 22- 24  A3    ---     Subtype (C - contact, NC - non-contact, CV - cata-
+                       clysmic variable, ELL - ellipsoidal variable)
+ 26- 27  I2    h       Right ascension, equinox J2000.0 (hours)
+ 29- 30  I2    m       Right ascension, equinox J2000.0 (minutes)
+ 32- 36  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+     38  A1    ---     Declination, equinox J2000.0 (sign)
+ 39- 40  I2    deg     Declination, equinox J2000.0 (degrees)
+ 42- 43  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+ 45- 48  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+ 51- 66  A16   ---     OGLE-IV ID
+ 68- 82  A15   ---     OGLE-III ID
+ 84- 98  A15   ---     OGLE-II ID
+ 99-     A     ---     Other designation (from VSX)
+--------------------------------------------------------------------------
+
+Format of the files ecl.dat and ell.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 19  A19   ---     Star's ID
+ 22- 27  F6.3  mag     I-band magnitude at the maximum light
+ 29- 34  F6.3  mag     V-band magnitude at the maximum light
+ 36- 47  F12.7 days    Orbital period
+ 50- 58  F9.4  days    Epoch of of the primary eclipse (HJD-2450000)
+ 61- 65  F5.3  mag     Depth of the primary eclipse
+ 67- 71  F5.3  mag     Depth of the secondary eclipse
+--------------------------------------------------------------------------
+
+Format of the files with photometry (OGLE-BLG-ECL-NNNNNN.dat,
+OGLE-BLG-ECL-NNNNNN.dat)
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 10  F10.5 days    Heliocentric Julian Day - 2450000
+ 12- 17  F6.3  mag     Magnitude
+ 19- 23  F5.3  mag     Uncertainty of magnitude
+--------------------------------------------------------------------------
+
+
+Finding charts are gzipped Postscript images. These are 60"x60" subframes
+of the I-band reference frames centered on the star. White cross marks the
+star. North is up and East to the left.
+
+
+Any presentation of the scientific analysis or usage of the data from the
+catalog of RR Lyrae stars in the Galactic bulge should include the appropriate
+reference(s) to OGLE paper(s).
+

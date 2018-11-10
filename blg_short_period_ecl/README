@@ -1,0 +1,62 @@
+=======================================================================
+                 Ultra-Short-Period Binary Systems
+           in the OGLE Fields Toward the Galactic Bulge
+
+     I. Soszynski, K. Stepien, B. Pilecki, P. Mroz, A. Udalski,
+    M. K. Szymanski, G. Pietrzynski, L. Wyrzykowski, K. Ulaczyk,
+  R. Poleski, S. Kozlowski, P. Pietrukowicz, J. Skowron, M. Pawlak
+
+=======================================================================
+soszynsk@astrouw.edu.pl
+
+This directory contains the sample of ultra-short-period eclipsing 
+and ellipsoidal binary systems detected in the OGLE fields toward the
+Galactic bulge.
+
+The directory structure is as follows:
+
+README            - this file
+
+list.dat          - list of stars
+
+phot/I/           - I-band photometry of individual objects
+phot/V/           - V-band photometry of individual objects
+phot.tar.gz       - gzipped phot/ directory
+
+fcharts/          - finding charts of individual objects
+ 
+pap.pdf           - PDF version of the paper Soszynski et al. (2014),
+                    Acta Astron. 64, ..., (arXiv:1410....) describing the
+                    catalog.
+
+Format of the file list.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 19  A19   ---     Star's ID
+ 22- 37  A16   ---     OGLE internal database ID
+ 40- 41  I2    h       Right ascension, equinox J2000.0 (hours)
+ 43- 44  I2    m       Right ascension, equinox J2000.0 (minutes)
+ 46- 50  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+     52  A1    ---     Declination, equinox J2000.0 (sign)
+ 53- 54  I2    deg     Declination, equinox J2000.0 (degrees)
+ 56- 57  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+ 59- 62  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+ 64- 66  A3    ---     Subtype (C - contact, NC - non-contact, CV - cata-
+                       clysmic variable, ELL - ellipsoidal variable
+ 69- 74  F6.3  mag     I-band magnitude at the maximum light
+ 76- 81  F6.3  mag     V-band magnitude at the maximum light
+ 83- 92  F10.8 days    Orbital period
+ 94- 98  F5.3  mag     Depth of the primary eclipse
+100-104  F5.3  mag     Depth of the secondary eclipse
+106-115  F10.5 days    Epoch of of the primary eclipse (HJD-2450000)
+--------------------------------------------------------------------------
+
+Finding charts are gzipped Postscript images. These are 60"x60" subframes
+of the I-band reference frames centered on the star. White cross marks the
+star. North is up and East to the left.
+ 
+ 
+Any presentation of the scientific analysis or usage of the data from this
+source should include the appropriate reference(s) to OGLE paper(s).
+

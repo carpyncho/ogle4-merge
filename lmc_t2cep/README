@@ -1,0 +1,90 @@
+=======================================================================
+               The OGLE Collection of Variable Stars
+           Type II Cepheids in the Large Magellanic Cloud
+
+      I. Soszynski, A. Udalski, M. K. Szymanski, L. Wyrzykowski,
+   K. Ulaczyk, R. Poleski, P. Pietrukowicz, S. Kozlowski, D. Skowron,
+           J. Skowron, P. Mroz, K. Rybicki, and P. Iwanek
+
+=======================================================================
+soszynsk@astrouw.edu.pl
+
+This directory contains the OGLE catalog type II Cepheids in the Large
+Magellanic Cloud.
+
+The directory structure is as follows:
+
+README            - this file
+
+ident.dat         - identification of stars
+
+t2cep.dat         - parameters of type II Cepheids
+
+phot/I/           - I-band photometry of individual objects
+phot/V/           - V-band photometry of individual objects
+phot.tar.gz       - gzipped phot/ directory
+
+fcharts/          - finding charts of individual objects
+
+remarks.txt       - remarks on selected objects
+
+pap.pdf           - PDF version of the paper Soszynski et al. (2018),
+                    Acta Astron. 68, 89, (arXiv:1807.00008) describing
+                    the collection.
+
+
+Format of the file ident.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 18  A18   ---     Star's ID
+ 21- 25  A5    ---     Subtype of type II Cepheids
+ 28- 29  I2    h       Right ascension, equinox J2000.0 (hours)
+ 31- 32  I2    m       Right ascension, equinox J2000.0 (minutes)
+ 34- 38  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+     40  A1    ---     Declination, equinox J2000.0 (sign)
+ 41- 42  I2    deg     Declination, equinox J2000.0 (degrees)
+ 44- 45  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+ 47- 50  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+ 53- 68  A16   ---     OGLE-IV ID 
+ 70- 84  A15   ---     OGLE-III ID
+ 86-100  A15   ---     OGLE-II ID
+102-     A     ---     Other designation (from GCVS)
+--------------------------------------------------------------------------
+
+Format of the file t2cep.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 18  A18   ---     Star's ID
+ 21- 26  F6.3  mag     Intensity mean I-band magnitude
+ 28- 33  F6.3  mag     Intensity mean V-band magnitude
+ 36- 45  F10.7 days    Period
+ 47- 55  F9.7  days    Uncertainty of period
+ 58- 67  F10.5 days    Time of maximum brightness (HJD-2450000)
+ 70- 74  F5.3  mag     I-band amplitude (maximum-minimum)
+ 77- 81  F5.3  ---     Fourier coefficient R_21
+ 83- 87  F5.3  ---     Fourier coefficient phi_21
+ 90- 94  F5.3  ---     Fourier coefficient R_31
+ 96-100  F5.3  ---     Fourier coefficient phi_31
+--------------------------------------------------------------------------
+
+Format of the files with photometry (phot/I/OGLE-LMC-T2CEP-NNN.dat,
+phot/V/OGLE-LMC-T2CEP-NNN.dat)
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+  1- 10  F10.5 days    Heliocentric Julian Day - 2450000
+ 12- 17  F6.3  mag     Magnitude
+ 19- 23  F5.3  mag     Uncertainty of magnitude
+--------------------------------------------------------------------------
+
+
+Finding charts are gzipped Postscript images. The names of the files are in
+the form: ID.ps.gz. The finding charts are 60"x60" subframes of the I-band
+reference frames centered on the star. White cross marks the star. North is
+up and East to the left.
+
+Any presentation of the scientific analysis or usage of the data from the
+catalog of type II Cepheids in the Magellanic Clouds should include the
+appropriate reference(s) to OGLE paper(s).

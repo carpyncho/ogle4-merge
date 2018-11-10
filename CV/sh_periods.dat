@@ -1,0 +1,35 @@
+#=======================================================================
+#          One Thousand New Dwarf Novae from the OGLE Survey
+#          
+#           P. Mroz, A. Udalski, R. Poleski, P. Pietrukowicz
+#             M.K. Szymanski, I. Soszynski, L. Wyrzykowski,
+#               K. Ulaczyk, S. Kozlowski, and J. Skowron
+#
+#=======================================================================
+# pmroz@astrouw.edu.pl
+#
+# List of measured superhump periods.
+#
+# Format of the file sh_periods.dat:
+# ----------------------------------------------------------------------
+# Bytes  Format Units   Description
+# ----------------------------------------------------------------------
+#  1- 16  A16   ---     Star's ID
+# 18- 25  F8.6  d       Superhump period
+# 27- 34  F8.6  d       Superhump period uncertainty
+# ----------------------------------------------------------------------
+
+OGLE-BLG-DN-0001 0.104020 0.000020
+OGLE-BLG-DN-0161 0.069463 0.000012
+OGLE-BLG-DN-0174 0.144740 0.000040
+OGLE-BLG-DN-0187 0.058050 0.000050
+OGLE-BLG-DN-0226 0.078430 0.000050
+OGLE-BLG-DN-0237 0.063000 0.000100
+OGLE-BLG-DN-0247 0.072610 0.000040
+OGLE-BLG-DN-0270 0.078800 0.000100
+OGLE-BLG-DN-0290 0.086400 0.000300
+OGLE-BLG-DN-0378 0.100500 0.000500
+OGLE-BLG-DN-0415 0.091216 0.000020
+OGLE-BLG-DN-0484 0.085400 0.000300
+OGLE-BLG-DN-0588 0.061400 0.000100
+OGLE-BLG-DN-0595 0.097200 0.000100

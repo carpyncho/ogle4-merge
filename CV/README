@@ -1,0 +1,130 @@
+========================================================================
+           One Thousand New Dwarf Novae from the OGLE Survey
+           
+            P. Mroz, A. Udalski, R. Poleski, P. Pietrukowicz
+              M.K. Szymanski, I. Soszynski, L. Wyrzykowski,
+                K. Ulaczyk, S. Kozlowski, and J. Skowron
+
+========================================================================
+pmroz@astrouw.edu.pl
+
+This directory contains the sample of dwarf nova candidates
+detected in the OGLE fields toward the Galactic bulge and
+the Magellanic System.
+
+The directory structure is as follows:
+
+README            - this file
+
+tab1.dat          - electronic version of Table 1:
+                    basic parameters of OGLE DN candidates:
+                    equatorial coordinates, OGLE database identifiers, peak 
+                    magnitude, amplitude of outbursts, outburst frequency,
+                    and mean outburst duration
+tab2.dat          - electronic version of Table 2:
+                    photometric data on the WZ Sge type candidates
+orb_periods.dat   - list of measured orbital periods
+sh_periods.dat    - list of measured superhump periods
+cv_xrays.dat      - list of X-ray counterparts to dwarf novae
+cv_vsx.dat        - list of cross-identifications with the International
+                    Variable Star Index databse (Watson 2006)
+cv_K2C9.lis       - list of dwarf novae within the K2 Campaign 9 superstamp
+                    (version of October 1st, 2016)
+phot.tar.gz       - gzipped I-band photometry of individual objects
+fcharts.tar.gz    - gzipped finding charts for individual objects
+
+Finding charts are png images. These are 60"x60" subframes of the I-band 
+reference frames centered on the star. Cross marks the star. 
+North is up and East to the left.
+  
+Any presentation of the scientific analysis or usage of the data from this
+source should include the appropriate reference(s) to OGLE paper(s).
+
+
+
+Format of the file tab1.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 19  I2    h       Right ascension, equinox J2000.0 (hours)
+ 21- 22  I2    m       Right ascension, equinox J2000.0 (minutes)
+ 24- 27  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+     30  A1    ---     Declination, equinox J2000.0 (sign)
+ 31- 32  I2    deg     Declination, equinox J2000.0 (degrees)
+ 34- 35  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+ 37- 40  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+ 42- 50  A9    ---     OGLE-IV field
+ 52- 57  A6    ---     OGLE-IV database number
+ 59- 66  A8    ---     OGLE-III field
+ 68- 73  A6    ---     OGLE-III databse number
+ 75- 82  A8    ---     OGLE-II field
+ 84- 89  A6    ---     OGLE-II database number
+ 91- 96  F6.3  mag     I-band peak magnitude
+ 98-102  F5.3  mag     I-band amplitude
+104-109  F6.3  yr^{-1} Outburst frequency
+111-115  F5.1  d       Mean outburst duration
+------------------------------------------------------------------------
+
+Format of the file tab2.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 19  I2    h       Right ascension, equinox J2000.0 (hours)
+ 21- 22  I2    m       Right ascension, equinox J2000.0 (minutes)
+ 24- 27  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+     30  A1    ---     Declination, equinox J2000.0 (sign)
+ 31- 32  I2    deg     Declination, equinox J2000.0 (degrees)
+ 34- 35  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+ 37- 40  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+ 42- 47  F6.3  mag     I-band peak magnitude
+ 49- 53  F5.3  mag     I-band amplitude
+ 55- 56  A2    ---     Rebrightening type
+ 58- 59  I2    ---     Number of rebrightenings
+     61  I1    ---     Number of normal outbursts
+ 63- 64  I2    d       Duration of superoutburst
+ 66- 72  F7.5  d       Superhump period
+ 74- 80  F7.5  d       Superhump period uncertainty
+------------------------------------------------------------------------
+
+Format of the file orb_periods.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 27  F10.8 d       Orbital period
+ 29- 38  F10.8 d       Orbital period uncertainty
+------------------------------------------------------------------------
+
+Format of the file sh_periods.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 25  F8.6  d       Superhump period
+ 27- 34  F8.6  d       Superhump period uncertainty
+------------------------------------------------------------------------
+
+Format of the file cv_xrays.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 40  A23   ---     X-ray source name
+ 42- 45  F4.2  arcsec  Angular distance between the star and X-ray source
+ 47- 50  A4    ---     Identifier in the Chandra Galactic Bulge Survey 
+                       Full X-Ray Point Source Catalog (Jonker et al.
+                       2011, 2014)
+     52  I1    ---     Reference
+------------------------------------------------------------------------
+
+Format of the file cv_vsx.dat:
+------------------------------------------------------------------------
+ Bytes  Format Units   Description
+------------------------------------------------------------------------
+  1- 16  A16   ---     Star's ID
+ 18- 41  A24   ---     VSX identifier
+ 43- 47  A5    ---     References
+------------------------------------------------------------------------
+

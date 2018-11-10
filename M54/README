@@ -1,0 +1,74 @@
+=======================================================================
+         OGLE Study of the Sagittarius Dwarf Spheroidal Galaxy
+                    and its M54 Globular Cluster
+
+  A. Hamanowicz, P. Pietrukowicz, A. Udalski, P. Mroz, I. Soszynski,
+       M.K. Szymanski, J. Skowron, R. Poleski, L. Wyrzykowski,
+              S. Kozlowski, M. Pawlak, and K. Ulaczyk
+
+=======================================================================
+ahamanowicz@astrouw.edu.pl
+pietruk@astrouw.edu.pl
+udalski@astrouw.edu.pl
+
+
+This directory contains details on detected variables in the globular
+cluster M54 (NGC 6715) residing in the core of the Sgr dSph galaxy.
+
+The directory structure is as follows:
+
+README            - this file
+
+M54variables.dat  - list of variable stars in M54
+
+phot/I/           - I-band photometry of individual variables
+phot/V/           - V-band photometry of individual variables
+phot.tar.gz       - gzipped phot/ directory
+
+fcharts/          - finding charts of individual variables
+
+pap.pdf           - PDF version of the publication
+
+
+Format of the file M54variables.dat:
+--------------------------------------------------------------------------
+ Bytes  Format Units   Description
+--------------------------------------------------------------------------
+   1-  4  A4    ---     Variable's ID
+   7- 10  A4    ---     HST variable candidate's ID (Montiel & Mighell 2010)
+  13- 14  I2    h       Right ascension, equinox J2000.0 (hours)
+  16- 17  I2    m       Right ascension, equinox J2000.0 (minutes)
+  18- 22  F5.2  s       Right ascension, equinox J2000.0 (seconds)
+      25  A1    ---     Declination, equinox J2000.0 (sign)
+  26- 27  I2    deg     Declination, equinox J2000.0 (degrees)
+  29- 30  I2    arcmin  Declination, equinox J2000.0 (arc minutes)
+  32- 35  F4.1  arcsec  Declination, equinox J2000.0 (arc seconds)
+  39- 44  F6.3  arcmin  Distance from the center of the cluster
+  47- 53  F7.3  r_c     Distance from the center in units of M54 core radius
+  56- 61  F6.3  r_h     Distance from the center in units of M54 half-light radius 
+  64- 68  F5.3  r_t     Distance from the center in units of M54 tidal radius
+  71- 90  A20   ---     OGLE-BLG-RRLYR-ID (Soszynski et al. 2014)
+  93-107  A15   ---     OGLE-IV ID
+ 110-121  F12.8 d       Period
+ 124-134  F10.8 d       Period uncertainty
+ 136-140  I5    ---     OGLE-IV ID in the V band
+ 147-153  A7    ---     Variability type
+ 155-160  F6.3  mag     Mean V-band brightness
+ 163-168  F6.3  mag     Maximum V-band brightness
+ 171-176  F6.3  mag     Minimum V-band brightness
+ 179-184  F6.3  mag     Mean I-band brightness
+ 187-192  F6.3  mag     Maximum I-band brightness
+ 195-200  F6.3  mag     Minimum I-band brightness
+ 203-207  F5.3  mag     I-band amplitude
+ 210-260  A     ---     Remarks
+--------------------------------------------------------------------------
+
+Finding charts are gzipped Postscript images. The finding charts are
+30"x30" subframes of the I-band reference frames centered on the star.
+White cross marks the star. North is up and East to the left. Some stars
+in the center of the cluster are hardly visible due to crowding.
+
+
+Any presentation of the scientific analysis or usage of the data from the
+OGLE collection of variable stars should include appropriate references
+to OGLE papers.

@@ -1,0 +1,33 @@
+=======================================================================
+
+   Blue large-amplitude pulsators as a new class of variable stars
+
+P. Pietrukowicz, W.A. Dziembowski, M. Latour, R. Angeloni, R. Poleski,
+F. di Mille, I. Soszynski, A. Udalski, M.K. Szymanski, L. Wyrzykowski,
+S. Kozlowski, J. Skowron, D. Skowron, P. Mroz, M. Pawlak & K. Ulaczyk
+
+                    Nature Astronomy, 1, 0166 (2017)
+
+=======================================================================
+pietruk@astrouw.edu.pl
+
+
+This directory contains details on the discovered Blue Large-Amplitude
+Pulsators (BLAPs). The directory structure is as follows:
+
+README            - this file
+
+blap.dat          - observational parameters of the variables
+
+fcharts/          - finding charts for individual objects
+
+phot/             - photometry of individual objects in the format:
+                    BJD_TDB-2450000, mag, magerror
+
+spectra/          - normalized spectra of some variables in the format:
+                    lambda[Angstrom], normfluxobs, normfluxfit
+
+
+Finding charts are gzipped Postscript images. The charts are 60"x60"
+subframes of the I-band reference frames centered on the star.
+White cross marks the star. North is up and East to the left.
